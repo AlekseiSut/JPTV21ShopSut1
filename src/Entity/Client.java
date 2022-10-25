@@ -5,6 +5,8 @@
  */
 package Entity;
 
+import java.util.Arrays;
+
 /**
  *
  * @author pupil
@@ -12,6 +14,7 @@ package Entity;
 public class Client {
 private String FirstName;
 private String LastName;
+
 
     public Client() {
     }
@@ -37,4 +40,11 @@ private String LastName;
         return "Client{" + "FirstName=" + FirstName + ", LastName=" + LastName + '}';
     }
 
-}
+ 
+
+
+
+
+    }
+
+

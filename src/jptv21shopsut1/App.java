@@ -9,12 +9,18 @@ import Entity.FoodDetective;
 import java.util.Arrays;
 import java.util.Scanner;
 import Entity.Product;
+import Entity.Client;
+import Entity.ClientRegister;
 public class App {
+    private ClientRegister clientRegister;
      private FoodDetective foodDetective;
     private Product[] products;   
+    private Client[] clients;
      public App() {
          foodDetective = new FoodDetective();
+         clientRegister = new ClientRegister();
          this.products = new Product[0];
+         this.clients = new Client[0];
      }
 
     public void run() {
@@ -40,10 +46,11 @@ public class App {
                     System.out.println("1. Добавить продукт");
                     this.products = Arrays.copyOf(this.products, this.products.length+1);
                     this.products[this.products.length-1] = foodDetective.createProduct();
-                    break;
+                    break;  
                 case 2:
                     System.out.println("2. Список продуктов");
-                    foodDetective.printListProducts(products);
+                    this.clients = Arrays.copyOf(this.clients, this.clients.length+1);
+                    this.clients[this.clients.length-1] = clientRegister.create;
                     break;
                 case 3:
                     System.out.println("3. Добавить Клиента");

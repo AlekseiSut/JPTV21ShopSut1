@@ -6,13 +6,14 @@
 package Entity;
 
 import java.util.Scanner;
-
+import Entity.Product;
+import Entity.Client;
 /**
  *
  * @author pupil
  */
 public class FoodDetective {
-    private final Scanner scanner;
+    private Scanner scanner;
 
     public FoodDetective() {
         this.scanner = new Scanner(System.in);
@@ -24,17 +25,16 @@ public class FoodDetective {
         System.out.print("Введите стоимость товара: ");
         product.setPrice(scanner.nextLine());
         return product;
-
+      }
     public void printListProducts(Product[] products) {
         for (int i = 0; i < products.length; i++) {
             Product product = products[i];
-            System.out.printf(i+1+". Food{title = %s%n",product.getTitle());
-            System.out.print("\tPrice = [\n");
-            for (int j = 0; j < product.getPrice().length; j++) {
+            System.out.printf(i+1+". Product{product = %s%n",product.getTitle());
+             System.out.printf(i+2+". Price{price €= %s%n",product.getPrice());
+                
             }
-            System.out.println("\t]");
-        }
-        System.out.println("   }");
+ 
     }
-    }
-      
+}
+
+         

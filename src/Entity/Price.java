@@ -5,34 +5,20 @@
  */
 package Entity;
 
-import java.util.Arrays;
-
 /**
  *
  * @author pupil
  */
-public class Product {    
-private String title;
-private String price;
+public class Price {
+    private String price;
 
     @Override
     public String toString() {
-        return "Product{" + "title=" + title + ", price=" + price + '}';
+        return "Price{" + "price=" + price + '}';
     }
+    
 
-
-
-
-
-    public Product() {
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
+    public Price() {
     }
 
     public String getPrice() {
@@ -42,13 +28,6 @@ private String price;
     public void setPrice(String price) {
         this.price = price;
     }
-
-    }
-
-
     
-
-
-
     
-
+}
